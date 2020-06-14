@@ -13,20 +13,6 @@ body {
 }
 
 
-.mainDiv {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.centerDiv {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -70%);
-}
-
 h1 {
     color: rgb(19, 20, 19);
     text-shadow: 1px 1px px #437453 ;
@@ -39,6 +25,10 @@ h2 {
     text-align: center;
 }
 
+#inputarea {
+    text-align: center;
+}
+
 textarea {
     background-color: rgb(51, 61, 70);
     border-radius: 10px 10px 0 0;
@@ -48,8 +38,6 @@ textarea {
     outline: 0;
     color: white;
     resize: none;
-    display: grid;
-
     font-size: 1.3rem; 
 }
 

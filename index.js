@@ -42,16 +42,12 @@ const endGame = () => {
         
     }
     finalMsg = `You have typed ${wordCount} words in ${totalTime} seconds.`;
-    
-    // finalMsg += compareWords(msg.innerText, totatStr);
-
-    // msg.innerHTML = finalMsg;
+  
     correct.innerHTML = compareWords(msg.innerText, totatStr);
     console.log(msg.innerText);
     console.log(totatStr);
     msg.innerHTML = finalMsg;
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
-    // error.innerHTML = ;
     
     typeword.value = null;
 }

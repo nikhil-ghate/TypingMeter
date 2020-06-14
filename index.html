@@ -10,21 +10,23 @@
     <title>TypingMeter</title>
 </head>
 <body>
-    <div id="header">
-        <h1>TypingMeter</h1><br><br>
-    </div>
+    <nav class="site-nav">
+        <h1>TypingMeter</h1>
+    </nav>
   
-    <div class="mainDiv">
-        <div class="centerDiv">
+    <section id="message" class="grid">
+        <div class="msg-text">
             <h2 id="msg"> </h2>
             <h2 id="speed"></h2>
             <h2 id="correct"></h2>
-            <h2 id="error"></h2>
-            <textarea  id="myword" placeholder="Start typing...." onpaste="return false"></textarea><br>
-            <button id="btn" class="mainbtn">Start</button>     
-
         </div>
-    </div>
+    </section>
+
+    <section id="inputarea">
+        <textarea  id="myword" placeholder="Start typing...." onpaste="return false"></textarea><br>
+        <button id="btn" class="mainbtn">Start</button> 
+
+    </section>
 
     <div class="footer">
         <h3>Created with ❤️ by <a href="https://www.linkedin.com/in/nikhil-ghate/" target="_blank">Nikhil Ghate</a></h3>
