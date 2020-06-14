@@ -2,7 +2,6 @@ const setOfWords = [
     "Shoot for the moon, even if you miss you will land among the stars." ,
     "Raise your words, not your voice. It is rain that grows flowers, not thunder.",
     "One of the hardest parts of life is deciding whether to walk away or try harder.",
-    "Most people do not listen with the intent to understand. Most people listen with the intent to reply.",
     "Everyone is temporary. Only life continues.",
     "There is no elevator to success. You have to take the stairs.",
     "Fear gives intelligence even to fools."

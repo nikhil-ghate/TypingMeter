@@ -69,14 +69,15 @@ textarea {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: rgb(105, 238, 105);
+    background: rgb(51, 61, 70);
+    color: rgb(248, 237, 202);
     padding: 5px;
     text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(248, 237, 202);
 }
 
 a:hover {
@@ -103,7 +104,7 @@ a:hover {
 @media screen and (max-width: 420px ){
     textarea {
         width: 280PX;
-        height: 130PX;
+        height: 120PX;
     }
 
 }
