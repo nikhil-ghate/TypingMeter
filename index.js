@@ -15,8 +15,10 @@ const speedmsg = document.getElementById("speed");
 const correct = document.getElementById("correct");
 const error = document.getElementById("error");
 
+const congrats = new Audio();
+congrats.src = "audio/Audience_Applause-Matthiew11-1206899159.mp3"
 
-let startTime, endTime, wordCount;
+let startTime, endTime, wordCount, errorWords;
 
 const playGame = () => {
     let randomNum = Math.floor(Math.random() * setOfWords.length);
@@ -35,11 +37,9 @@ const endGame = () => {
 
 //     msg.innerHTML = "you have typed "+ wordCount + " words in" +  ;
     let speed = Math.round((wordCount / totalTime) * 60);
+   
     let finalMsg;
-    if (wordCount == 0 ) {
-        alert("Not written");
-        
-    }
+
     finalMsg = `You have typed ${wordCount} words in ${totalTime} seconds.`;
   
     correct.innerHTML = compareWords(msg.innerText, totatStr);
@@ -48,9 +48,21 @@ const endGame = () => {
     msg.innerHTML = finalMsg;
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
     
+    
+    if (speed >= 10 && errorWords <=2 ) {
+        congrats.play();
+    }
+
+
+    if (wordCount == 0 ) {
+        alert("Not typed anything..");   
+    }
+    
     typeword.value = null;
 }
 
+
+// FUNCTION: ComapareWords()
 const compareWords = (str1, str2)=> {
     let words1 = str1.split(" ");
     let words2 = str2.split(" ");
@@ -62,7 +74,7 @@ const compareWords = (str1, str2)=> {
        } 
     });
 
-    let errorWords = words1.length - count;
+    errorWords = words1.length - count;
     return `${count} words are correct out of ${words1.length} words <br>No. of Errors: ${errorWords}`;
 }
 
