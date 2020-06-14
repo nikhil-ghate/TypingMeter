@@ -36,7 +36,6 @@ const endGame = () => {
     let totatStr = typeword.value;
     wordCount = wordCounter(totatStr);
 
-//     msg.innerHTML = "you have typed "+ wordCount + " words in" +  ;
     let speed = Math.round((wordCount / totalTime) * 60);
    
     let finalMsg;
@@ -49,11 +48,9 @@ const endGame = () => {
     msg.innerHTML = finalMsg;
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
     
-    
     if (speed >= 25 && errorWords <=2 ) {
         congrats.play();
     }
-
 
     if (wordCount == 0 ) {
         alert("Not typed anything..");   
