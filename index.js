@@ -49,7 +49,7 @@ const endGame = () => {
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
     
     
-    if (speed >= 10 && errorWords <=2 ) {
+    if (speed >= 25 && errorWords <=2 ) {
         congrats.play();
     }
 
