@@ -10,6 +10,7 @@ const setOfWords = [
 const msg = document.getElementById("msg");
 const btn = document.getElementById("btn");
 const typeword = document.getElementById("myword");
+typeword.disabled = true;
 
 const speedmsg = document.getElementById("speed");
 const correct = document.getElementById("correct");
@@ -35,7 +36,6 @@ const endGame = () => {
     let totatStr = typeword.value;
     wordCount = wordCounter(totatStr);
 
-//     msg.innerHTML = "you have typed "+ wordCount + " words in" +  ;
     let speed = Math.round((wordCount / totalTime) * 60);
    
     let finalMsg;
@@ -47,7 +47,6 @@ const endGame = () => {
     console.log(totatStr);
     msg.innerHTML = finalMsg;
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
-    
     
     if (speed >= 25 && errorWords <=2 ) {
         congrats.play();
