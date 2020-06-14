@@ -45,9 +45,12 @@ const endGame = () => {
     
     // finalMsg += compareWords(msg.innerText, totatStr);
 
+    // msg.innerHTML = finalMsg;
+    correct.innerHTML = compareWords(msg.innerText, totatStr);
+    console.log(msg.innerText);
+    console.log(totatStr);
     msg.innerHTML = finalMsg;
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
-    correct.innerHTML = compareWords(msg.innerText, totatStr);
     // error.innerHTML = ;
     
     typeword.value = null;
