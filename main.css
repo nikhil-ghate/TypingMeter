@@ -23,6 +23,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 1.2em;
 }
 
 hr {
@@ -65,12 +66,12 @@ textarea {
 }
 
 #footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     background: rgb(51, 61, 70);
-    color: rgb(248, 237, 202);
+    color: white;
     padding: 5px;
     text-align: center;
 }
@@ -106,5 +107,8 @@ a:hover {
         width: 280PX;
         height: 120PX;
     }
+    h2 { 
+        font-size: 0.8em; 
+     }
 
 }
