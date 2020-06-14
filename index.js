@@ -10,6 +10,7 @@ const setOfWords = [
 const msg = document.getElementById("msg");
 const btn = document.getElementById("btn");
 const typeword = document.getElementById("myword");
+typeword.disabled = true;
 
 const speedmsg = document.getElementById("speed");
 const correct = document.getElementById("correct");
@@ -49,7 +50,7 @@ const endGame = () => {
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
     
     
-    if (speed >= 10 && errorWords <=2 ) {
+    if (speed >= 25 && errorWords <=2 ) {
         congrats.play();
     }
 
