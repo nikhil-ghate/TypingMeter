@@ -80,6 +80,8 @@ const wordCounter = (str) => {
 btn.addEventListener("click", function(){
     if (this.innerHTML ==  "Start"){
         typeword.disabled = false;
+        speedmsg.innerHTML = null;
+        correct.innerHTML = null;
         playGame();
     }else if(this.innerText == "Done"){
         if (wordCounter(typeword.value) != 0) {
