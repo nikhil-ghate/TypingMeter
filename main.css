@@ -3,6 +3,7 @@
     --secondary: orange;
 }
 
+
 body {
     margin:0;
     padding: 0;
@@ -15,14 +16,22 @@ body {
 
 h1 {
     color: rgb(19, 20, 19);
-    text-shadow: 1px 1px px #437453 ;
-    padding: 25px;
+    text-shadow: 1px 1px px #437453;
     text-align: center;
     font-family: 'Fontdiner Swanky', cursive;
 }
 
 h2 {
     text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
 }
 
 #inputarea {
@@ -34,7 +43,7 @@ textarea {
     border-radius: 10px 10px 0 0;
     padding: 20px;
     width: 800px;
-    height: 400px;
+    height: 220px;
     outline: 0;
     color: white;
     resize: none;
@@ -42,20 +51,25 @@ textarea {
 }
 
 .mainbtn {
-    padding: 10px 20px;
+    margin-top: 15px;
+    padding: 10px 40px;
     border-radius: 20px;
     outline: 0;
-    background: lightgreen;
+    background: rgb(105, 238, 105);
     border: 2px solid black;
     font-size: 1rem;
 }
 
 .mainbtn:hover {
-    background: rgb(41, 202, 41);
+    background: lightgreen;
 }
 
-.footer {
-    background: lightgreen;
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(105, 238, 105);
     padding: 5px;
     text-align: center;
 }
@@ -89,7 +103,7 @@ a:hover {
 @media screen and (max-width: 420px ){
     textarea {
         width: 280PX;
-        height: 250PX;
+        height: 130PX;
     }
 
 }
