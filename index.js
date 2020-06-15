@@ -54,7 +54,7 @@ const endGame = () => {
 
 
     if (wordCount == 0 ) {
-        alert("Not typed anything..");   
+        alert("Not typed anything...");   
     }
     
     typeword.value = null;
@@ -77,6 +77,7 @@ const compareWords = (str1, str2)=> {
     return `${count} words are correct out of ${words1.length} words <br>No. of Errors: ${errorWords}`;
 }
 
+//FUNCTION: WordCounter()
 const wordCounter = (str) => {
     if (str.length == 0) {
         alert("not written");
