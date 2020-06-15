@@ -43,8 +43,6 @@ const endGame = () => {
     finalMsg = `You have typed ${wordCount} words in ${totalTime} seconds.`;
   
     correct.innerHTML = compareWords(msg.innerText, totatStr);
-    console.log(msg.innerText);
-    console.log(totatStr);
     msg.innerHTML = finalMsg;
     speedmsg.innerHTML = `Speed: ${speed} words/minute`;
     
@@ -52,7 +50,6 @@ const endGame = () => {
         congrats.play();
     }
     
-    // typeword.value = null;
 }
 
 
@@ -82,6 +79,7 @@ const wordCounter = (str) => {
     return response;
 }
 
+//Listen when button clicked
 btn.addEventListener("click", function(){
     if (this.innerHTML ==  "Start"){
         typeword.disabled = false;
