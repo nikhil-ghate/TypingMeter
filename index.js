@@ -51,13 +51,8 @@ const endGame = () => {
     if (speed >= 25 && errorWords <=2 ) {
         congrats.play();
     }
-
-
-    if (wordCount == 0 ) {
-        alert("Not typed anything...");   
-    }
     
-    typeword.value = null;
+    // typeword.value = null;
 }
 
 
@@ -80,7 +75,7 @@ const compareWords = (str1, str2)=> {
 //FUNCTION: WordCounter()
 const wordCounter = (str) => {
     if (str.length == 0) {
-        alert("not written");
+        alert("Not typed anything...");
         return 0;
     }
     let response = str.split(" ").length;
@@ -90,6 +85,7 @@ const wordCounter = (str) => {
 btn.addEventListener("click", function(){
     if (this.innerHTML ==  "Start"){
         typeword.disabled = false;
+        typeword.value = null;
         speedmsg.innerHTML = null;
         correct.innerHTML = null;
         playGame();
