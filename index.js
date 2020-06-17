@@ -21,6 +21,7 @@ congrats.src = "audio/Audience_Applause-Matthiew11-1206899159.mp3"
 
 let startTime, endTime, wordCount, errorWords;
 
+// FUNCTION: playGame()
 const playGame = () => {
     let randomNum = Math.floor(Math.random() * setOfWords.length);
     msg.innerHTML = setOfWords[randomNum]; 
@@ -28,6 +29,7 @@ const playGame = () => {
     btn.innerText = "Done";
 }
 
+// FUNCTION: endGame()
 const endGame = () => {
     endTime = new Date();
     let totalTime = (endTime - startTime);   //in ms

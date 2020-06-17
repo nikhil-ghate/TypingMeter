@@ -72,7 +72,7 @@ textarea {
     width: 100%;
     background: rgb(51, 61, 70);
     color: white;
-    padding: 5px;
+    padding: 2px;
     text-align: center;
 }
 
@@ -83,6 +83,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: lightpink;
 }
 
 
