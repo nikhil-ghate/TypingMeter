@@ -6,7 +6,7 @@
 ### Features:
 - Mobile Responsive
 - Strongly case-sensitive
-- Paste protected textarea
+- Paste protected text-area
 - Applause sound effect on ideal condition (i.e. Speed >= 25 words per minute AND No. of errors <= 2)
 
  
