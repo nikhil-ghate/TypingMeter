@@ -95,6 +95,6 @@ btn.addEventListener("click", function(){
             btn.innerText = "Start";
             endGame();
         }
-        return;
+         return;
     }
 })
